@@ -1,12 +1,6 @@
-% b) --> hacer simbolico con laplace, hacer un for calculando la exponencial y hacer la simulacion con simulink
-% c) hacer solo la simulacion
-
-
 %
 % b)
 %
-
-
 syms s t;
 
 % Matrix of the system
