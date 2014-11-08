@@ -20,7 +20,7 @@ X0 = [823 ; 1000];
 X_MAX_RANGE = 20;
 range = 0:X_MAX_RANGE;
 I = eye(2);
-dt = 0.01;
+dt = 0.1;
 
 
 %
