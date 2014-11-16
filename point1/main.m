@@ -16,7 +16,6 @@ range = 0:X_MAX_RANGE;
 I = eye(2);
 dt = 0.01;
 N_MAX_EXP_TERMS = 100;
-rangexy = [0 5 -1000 1000];
 t_axis = 0:dt:X_MAX_RANGE;
 %
 % Calculate  simbolically by L^-1[(s*I - A)^-1]*X0
@@ -48,11 +47,7 @@ plot(t_axis, P1, t_axis, P2);
 Points = matrixExp(A, X0, dt, X_MAX_RANGE, N_MAX_EXP_TERMS );
 
 subplot(2,2,2);
-p1 = plot(t_axis, Points(1, 1:end)); hold on;
-axis(rangexy);
-p2 = plot(t_axis, Points(2, 1:end));
-axis(rangexy);
-set(p1, 'Color', 'blue');
-set(p2, 'Color', 'red');
+plot(t_axis, Points(1, 1:end), t_axis, Points(2, 1:end)); 
+ylim([-14000 4000])
 
 
