@@ -11,11 +11,11 @@ X0 = [823 ; 105];
 
 
 % Parameters
-X_MAX_RANGE = 2;
+X_MAX_RANGE = 0.8;
 range = 0:X_MAX_RANGE;
 I = eye(2);
-dt = 0.01;
-N_MAX_EXP_TERMS = 100;
+dt = 0.005;
+N_MAX_EXP_TERMS = 180;
 t_axis = 0:dt:X_MAX_RANGE;
 %
 % Calculate  simbolically by L^-1[(s*I - A)^-1]*X0
